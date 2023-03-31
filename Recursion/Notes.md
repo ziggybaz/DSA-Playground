@@ -1,4 +1,4 @@
-# Recursion
+# ***Recursion***
 
 ## Summary.
 Is a process in which a function calls itself directly or indirectly. This solves a problem by calling a copy of itself and solving smaller sub-problems of the original problem.
