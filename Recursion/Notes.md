@@ -1,8 +1,5 @@
 # Recursion
 
-*[Where on earth did recursion come from? - Computerphile](https://www.youtube.com/watch?v=Mv9NEXX1VHc)</br>
-*[DSA recursion - GeeksforGeeks](https://www.geeksforgeeks.org/introduction-to-recursion-data-structure-and-algorithm-tutorials/)
-
 ## Summary.
 Is a process in which a function calls itself directly or indirectly. This solves a problem by calling a copy of itself and solving smaller sub-problems of the original problem.
 
@@ -31,3 +28,7 @@ int factorial(int n)
     return n * factorial(n-1); //recursive case
  }
  ```
+ 
+ 
+*[Where on earth did recursion come from? - Computerphile](https://www.youtube.com/watch?v=Mv9NEXX1VHc)</br>
+*[DSA recursion - GeeksforGeeks](https://www.geeksforgeeks.org/introduction-to-recursion-data-structure-and-algorithm-tutorials/)
