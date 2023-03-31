@@ -16,7 +16,7 @@ Is a process in which a function calls itself directly or indirectly. This solve
 ## How are recursive functions stored in memory?
 Recursion uses more memory. This is due to the fact that a recursive function adds to the stack with each recursive call and keeps the values there until the call is finished - they are memory intensive.
 
-##A common error thst arises from recursion?
+## A common error thst arises from recursion?
 THe stack-overflow error may arise due to a base condition never being set or never being reached, this leads to memory being exhausted.
 
 
