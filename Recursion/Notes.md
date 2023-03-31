@@ -7,9 +7,9 @@
 Is a process in which a function calls itself directly or indirectly. This solves a problem by calling a copy of itself and solving smaller sub-problems of the original problem.
 
 Example of application:
-1.Memoization
-2.Backtracking algo's
-3.Divide & Conquer algo's
+1. Memoization
+2. Backtracking algo's
+3. Divide & Conquer algo's
 4. Sorting algo's
 5. Tree & Graph traversal
 
