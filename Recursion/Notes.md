@@ -22,7 +22,7 @@ THe stack-overflow error may arise due to a base condition never being set or ne
 
 
 😂 getting facrorials of a number is the simplest usecase of recursion:
-/*
+```
 int factorial(int n)
 {
   if(n <= 1) //base condition that prevents the function from running infinitely 
@@ -30,4 +30,4 @@ int factorial(int n)
   else
     return n * factorial(n-1); //recursive case
  }
- */
+ ```
