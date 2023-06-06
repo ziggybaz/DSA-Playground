@@ -2,12 +2,12 @@ Felt it was just one algorithm worth knowing.
 This is just a theoretical summary, no code implementation.
 
 Picture this:
-If you are a C programmer, you've requested the OS for some memmory allocation using malloc() to run some program but you forgot to free up the memory free().
+You're a C programmer, you've requested the OS for some memmory allocation using `malloc()` to run some program but you forgot to free up the memory `free()`.
 Now, this is a huge problem as at some point you'll get an 'Out Of Memory' error. This is really frustrating, believe you me, I've spent countless hours debugging my basic C programs only to realise I forgot to give back the memory I had been allocated.
 
-Lord knows this is one of the reasons I prefer higher-level languages 😅 as I don't have to worry about memory management.
+Lord knows this is one of the reasons I prefer higher-level languages 😅 I don't have to worry about memory management, one thing about me, I like my languages easy 🤣.
 
-This situation aroused my curiosity and I wanted to figure out how memory management works on languages such as Java and I ended up stumbling on Mark and Sweep.
+This situation aroused my curiosity, I wanted to figure out how memory management works on garbage collected languages, I ended up stumbling on Mark and Sweep.
 
 MARK & SWEEP.
 All garbage collection algorithms perform 2 basic tasks:
