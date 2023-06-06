@@ -1,5 +1,5 @@
 Felt it was just one algorithm worth knowing.
-This is just a theoretical summary.
+This is just a theoretical summary, no code implementation.
 
 Picture this:
 If you are a C programmer, you've requested the OS for some memmory allocation using malloc() to run some program but you forgot to free up the memory free().
