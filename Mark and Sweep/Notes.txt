@@ -1,0 +1,40 @@
+Felt it was just one algorithm worth knowing.
+This is just a theoretical summary.
+
+Picture this:
+If you are a C programmer, you've requested the OS for some memmory allocation using malloc() to run some program but you forgot to free up the memory free().
+Now, this is a huge problem as at some point you'll get an 'Out Of Memory' error. This is really frustrating, believe you me, I've spent countless hours debugging my basic C programs only to realise I forgot to give back the memory I had been allocated.
+
+Lord knows this is one of the reasons I prefer higher-level languages 😅 as I don't have to worry about memory management.
+
+This situation aroused my curiosity and I wanted to figure out how memory management works on languages such as Java and I ended up stumbling on Mark and Sweep.
+
+MARK & SWEEP.
+All garbage collection algorithms perform 2 basic tasks:
+1.Detecting all unreachable objects.
+2.Reclaim heap space used by the garbage objects and make the space available again to the program
+
+The Mark & Sweep algo' as the name suggests performs this in 2 stages, guess which, Mark and Phase.
+Mark Phase.
+-When an object is created, its mark bit is set to 0(fasle).
+-In this phase you set the marked bit for all the reachable objects to 1(true).
+-And to implement it, you'll need to do a graph traversal where:
+  consider every object as a node and then all nodes that are read from this node are visted and it goes on until all reachable nodes are visited.
+  the root is a variable that refers to an object and is directly accessible by a local variable.
+  you can therefore access the marked bit of an object by say 'mkedBit()'
+  
+Sweep Phase.
+This phase clears the heap memory for all the unreachable objects.
+All those objects whose marked value is set to false are cleared from the heap memory.
+
+Advantages Of M&S.
+1.No additional overheads incurred during execution of the algorithm.
+2.Since it handles cases with cyclic references, even in the case of a cycle, it'll never enter into an infinite loop
+
+Disadvantages Of M&S.
+1.Normal program execution is suspended while the algorithm runs.
+
+
+
+Nothing better than a visual aid innit😆:https://www.youtube.com/watch?v=c32zXYAK7CI
+But we kids don't use C anymore, Python, now that's where it's at 😎🤣.
