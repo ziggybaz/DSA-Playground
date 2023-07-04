@@ -1,0 +1,47 @@
+This is just a basic summary of hash maps:
+
+        Hash Table
+Is a data-structure used for storing information ah duh!
+
+The information in a hash table has 2 main components:
+1.key
+2.value
+
+A hash-table is a way of implementing an associative array.
+
+To implement a hash-table, you start by constructing a hash-function. A hash-function looks at a key and evaluates it then provides an index(hash/ digests) which provides a location in an array to store the information.
+
+
+        Hash Function.
+A hash function is any function that can be used to map data of arbitrary size to fixed-size values. The value it returns are simply referred to as hashes or digests and are usually used to index a fixed-size table i.e hash-tables.
+
+
+Broad Use case.
+Hash functions and their associated hash tables are used in data storage and retrieval applications to access data in a small and nearly constant time per retrieval.
+
+Some advantage.
+Hashing is a computationally and storage space-efficient form of data access that avoids the non-constant access time of ordered and unordered lists and structured trees, and the often exponential storage requirements of direct access of state spaces of large or variable-length keys.
+
+Basic theoretical implementation.
+A hash function takes a key as its argument, which is associated with a record and used to identify it to the data storage and retrieval application. The keys may be fixed length, like an integer, or variable length, like a name. The output is a digest used to index a hash-table holding the data/records
+
+Purpose of a hash-function:
+A hash function may be considered to perform three functions:
+1.Convert variable-length keys into fixed length values.
+2.Scramble the bits of the key so that the resulting values are uniformly distributed over the keyspace.
+3.Map the key values into ones less than or equal to the size of the table
+
+Characteristics of a good hash function:
+1.should be very fast to compute
+2.should minimize collisions
+
+    Collisions 
+When dealing with hash maps its inevitable that the hash-function will map to an already occupied bucket in your hash-table, as its very rare to design a perfect function hash-function, this scenario is what is referred to as collisions.
+If it so happens or better yet, when it happens, it's necessary that your hash-function have collision-resolution methods that employ auxiliary data-structures like 'linked-lists', or systematic probing of the table to find an empty bucket.
+
+for more info refer to this resouces:
+1. when to use hash tables over arrays:
+https://intranet.alxswe.com/rltoken/OgO7uga3PIaCTMtTzYCY3g
+
+2.building them in C/C++:
+https://intranet.alxswe.com/rltoken/3RwwAqmpGJpMiBa7BE9fAQ
